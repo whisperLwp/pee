@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 08 12:24:55 CST 2018
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1520483095191
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.apache.shiro\:shiro-spring\:pom\:${shiro.version} from/to central (https\://repo.maven.apache.org/maven2)\: Illegal character in path at index 68\: https\://repo.maven.apache.org/maven2/org/apache/shiro/shiro-spring/${shiro.version}/shiro-spring-${shiro.version}.pom

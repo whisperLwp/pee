@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-4.0.xsd
+           http://www.springframework.org/schema/task  
+           http://www.springframework.org/schema/task/spring-task-4.1.xsd">
+
+	<task:annotation-driven />
+	<!-- <context:component-scan base-package="com.readhi.template.task" /> -->
+	<bean id="prop" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+	<!-- <bean id="prop" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"> -->
+	 	 <property name="ignoreResourceNotFound" value="true" />
+	 	<property name="locations">
+	 		<array>
+	 			<value>classpath:public.properties</value>
+	 			<value>file:/data/store/pems/prop/public.properties</value>
+	 		</array>
+	 	</property>
+ 	</bean>
+	
+</beans>

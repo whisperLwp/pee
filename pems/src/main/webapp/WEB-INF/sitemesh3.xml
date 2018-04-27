@@ -1,0 +1,21 @@
+<sitemesh>  
+  
+  <!-- 配置默认的渲染器. 将应用于所有路径. -->  
+  <mapping decorator="/WEB-INF/jsp/layouts/default_layout.jsp"/>  
+  
+  <!-- 配置特定路径的渲染器. -->  
+<!--   <mapping path="/admin/*" decorator="/another-decorator.html"/>  
+  <mapping path="/*.special.jsp" decorator="/special-decorator.html"/>   -->
+  
+  <!-- 配置多个渲染器. -->  
+<!--   <mapping>  
+    <path>/articles/*</path>  
+    <decorator>/decorators/article.html</decorator>  
+    <decorator>/decorators/two-page-layout.html</decorator>  
+    <decorator>/decorators/common.html</decorator>  
+  </mapping>  --> 
+  
+  <!-- 不被渲染的路径. -->  
+  <mapping path="/resources/*" exclue="true"/> 
+  <mapping path="/" exclue="true"/>   
+</sitemesh>  

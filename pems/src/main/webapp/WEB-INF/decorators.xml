@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/jsp/layouts/">
+	<excludes>
+		<pattern>/sso*</pattern>
+		
+	</excludes>
+	
+	<decorator name="default_layout" page="default_layout.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+</decorators>
